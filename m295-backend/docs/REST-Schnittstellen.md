@@ -11,7 +11,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **HTTP-Methode**: `GET`
 - **Request-Body**: keiner
 - **Response**:  
-  ![REST1](../screenshots/REST1.png)
+  ![REST1](/docs/screenshots/REST1.png)
 
 
 ---
@@ -22,7 +22,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **Path-Parameter**:  
   `id: Long` – ID des gewünschten Charakters
 - **Response**:  
-  ![REST2](../screenshots/REST2.png)
+  ![REST2](/docs/screenshots/REST2.png)
 
 
 ---
@@ -33,7 +33,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **Request-Body**:
 - **Response**: Erstellter Charakter mit generierter ID:
 
-  ![REST3](../screenshots/REST3.png)
+  ![REST3](/docs/screenshots/REST3.png)
 
 
 ---
@@ -46,7 +46,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **Request-Body**: gleiche Struktur wie POST
 - **Response**: aktualisierter Charakter
 
-  ![REST4](../screenshots/REST4.png)
+  ![REST4](/docs/screenshots/REST4.png)
 
 
 ---
@@ -58,7 +58,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
   `id: Long`
 - **Response**: HTTP 200 (bei Erfolg)
 
-  ![REST5](../screenshots/REST5.png)
+  ![REST5](/docs/screenshots/REST5.png)
 
 
 ---
@@ -73,7 +73,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
     - `origin: String` (optional)
 - **Response**: Liste der passenden Charaktere
 
-  ![REST6](../screenshots/REST6.png)
+  ![REST6](/docs/screenshots/REST6.png)
 
 
 ---
@@ -86,7 +86,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **Response**:  
   _Beispiel folgt_
 
-  ![REST7](../screenshots/REST7.png)
+  ![REST7](/docs/screenshots/REST7.png)
 
 
 ---
@@ -98,7 +98,7 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
   _Beispiel folgt_
 - **Response**: Der erstellte Favorit
 
-  ![REST8](../screenshots/REST8.png)
+  ![REST8](/docs/screenshots/REST8.png)
 
 
 ---
@@ -110,4 +110,4 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
   `id: Long`
 - **Response**: HTTP 200
 
-  ![REST9](../screenshots/REST9.png)
+  ![REST9](/docs/screenshots/REST9.png)

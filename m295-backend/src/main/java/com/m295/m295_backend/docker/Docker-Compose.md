@@ -2,7 +2,7 @@
 
 ## docker-compose.yml datei anlegen:
 
-```dockerfile
+```
 version: '3.8'
 
 services:

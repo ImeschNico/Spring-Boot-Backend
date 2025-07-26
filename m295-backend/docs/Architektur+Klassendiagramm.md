@@ -2,8 +2,8 @@
 
 ## Architektur des Backends
 
-![Architekturdiagramm](../screenshots/architektur.png)
-![Architekturdiagramm2](../screenshots/architektur.png)
+![Architekturdiagramm](/docs/screenshots/Architekturdiagramm.png)
+![Architekturdiagramm2](/docs/screenshots/Architekturdiagramm2.png)
 
 Das Backend wurde nach dem klassischen Schichtenmodell (Layered Architecture) aufgebaut. Es besteht aus drei Hauptschichten:
 
@@ -39,6 +39,6 @@ Das Backend wurde nach dem klassischen Schichtenmodell (Layered Architecture) au
 
 Das folgende Diagramm zeigt die wichtigsten Entitäten und deren Beziehungen zueinander. Im Zentrum steht die Entity `Charakter`, die über das Repository angesprochen wird. Die Struktur wurde nach JPA-Standards modelliert.
 
-![Klassendiagramm](../screenshots/klassendiagramm.png)
+![Klassendiagramm](/docs/screenshots/Klassendiagramm.png)
 
 ---
