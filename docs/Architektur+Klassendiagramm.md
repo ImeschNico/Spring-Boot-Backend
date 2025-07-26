@@ -2,7 +2,7 @@
 
 ## Architektur des Backends
 
-![Architekturdiagramm](m295-backend/docs/screenshots/Architekturdiagramm.png)
+![Architekturdiagramm](/docs/screenshots/Architekturdiagramm.png)
 ![Architekturdiagramm2](/docs/screenshots/Architekturdiagramm2.png)
 
 Das Backend wurde nach dem klassischen Schichtenmodell (Layered Architecture) aufgebaut. Es besteht aus drei Hauptschichten:
