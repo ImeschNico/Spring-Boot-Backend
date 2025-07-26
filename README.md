@@ -62,17 +62,17 @@ Das Backend erfüllt folgende Hauptfunktionen:
 ---
 
 ## Arichitektur & Klassendiagramm
-![Architektur & Klassendiagramm](docs/Architektur+Klassen.md)
+[Architektur & Klassendiagramm](src/main/java/com/m295/m295_backend/docs/Architektur+Klassendiagramm.md)
 
 ---
 
 ## REST_Schnittstellen
-![REST-Schnittstellen](docs/REST-Schnittstellen.md)
+[REST-Schnittstellen](docs/REST-Schnittstellen.md)
 
 ---
 
 ## Tests
-![Tests](docs/Tests.md)
+[Tests](docs/Tests.md)
 
 ---
 
