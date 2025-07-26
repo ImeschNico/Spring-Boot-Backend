@@ -77,7 +77,7 @@ Das Backend erfüllt folgende Hauptfunktionen:
 ---
 
 ## Installationsanleitung
-[Installationsanleitung](docs/Installationsanleitung.md)
+[Installationsanleitung](docs/Installationsanleitung.md) 
 
 ---
 
