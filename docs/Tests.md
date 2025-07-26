@@ -61,7 +61,7 @@ Die Tests werden ausgeführt über:
 
 **CharakterControllerTest:**  
 
-![Test1](../screenshots/Test1.png)
+![Test1](/docs/screenshots/Test1.png)
 
 Ergebnis: Test bestanden
 
@@ -69,7 +69,7 @@ Ergebnis: Test bestanden
 
 **CharakterServiceTest:** 
 
-![Test2](../screenshots/Test2.png)
+![Test2](/docs/screenshots/Test2.png)
 
 Ergebnis: Test bestanden
 
@@ -77,7 +77,7 @@ Ergebnis: Test bestanden
 
 **CharakterRepositoryTest:**  
 
-![Test3](../screenshots/Test3.png)
+![Test3](/docs/screenshots/Test3.png)
 
 Ergebnis: Test bestanden
 
