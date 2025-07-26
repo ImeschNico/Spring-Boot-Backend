@@ -62,7 +62,7 @@ Das Backend erfüllt folgende Hauptfunktionen:
 ---
 
 ## Arichitektur & Klassendiagramm
-[Architektur & Klassendiagramm](docs/architektur-und-klassen.md)
+[Architektur & Klassendiagramm](docs/Architektur+Klassen.md)
 
 ---
 
