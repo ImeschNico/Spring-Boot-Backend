@@ -62,7 +62,7 @@ Das Backend erfüllt folgende Hauptfunktionen:
 ---
 
 ## Arichitektur & Klassendiagramm
-[Architektur & Klassendiagramm](src/main/java/com/m295/m295_backend/docs/Architektur+Klassendiagramm.md)
+[Architektur & Klassendiagramm](../docs/Architektur+Klassendiagramm.md)
 
 ---
 
