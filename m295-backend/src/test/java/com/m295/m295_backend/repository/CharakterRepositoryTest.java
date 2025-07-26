@@ -22,11 +22,10 @@ public class CharakterRepositoryTest {
     void setup() {
         charakterRepository.deleteAll();
 
-        Charakter c1 = new Charakter("Rick Sanchez", "Human", "Male", "Earth (C-137)", "alive");
-        Charakter c2 = new Charakter("Morty Smith", "Human", "Male", "Earth (C-137)", "alive");
-        Charakter c3 = new Charakter("Birdperson", "Bird-Person", "Male", "Bird World", "dead");
-        Charakter c4 = new Charakter("Summer Smith", "Human", "Female", "Earth (Replacement)", "alive");
-
+        Charakter c1 = new Charakter("Rick Sanchez", "alive", "Male", "Earth (C-137)", "Human");
+        Charakter c2 = new Charakter("Morty Smith", "alive", "Male", "Earth (C-137)", "Human");
+        Charakter c3 = new Charakter("Birdperson", "dead", "Male", "Bird World", "Bird-Person");
+        Charakter c4 = new Charakter("Summer Smith", "alive", "Female", "Earth (Replacement)", "Human");
         charakterRepository.saveAll(List.of(c1, c2, c3, c4));
     }
 
