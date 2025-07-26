@@ -31,9 +31,9 @@ public class CharakterMapper {
         entity.getId(),
         entity.getName(),
         entity.getStatus(),
-        entity.getSpecies(),
         entity.getGender(),
-        entity.getOrigin()
+        entity.getOrigin(),
+        entity.getSpecies()
 );
     }
 
@@ -57,10 +57,12 @@ public class CharakterMapper {
         return new Charakter(
                 dto.getId(),
                 dto.getName(),
-                dto.getSpecies(),
+                dto.getStatus(),
                 dto.getGender(),
                 dto.getOrigin(),
-                dto.getStatus()
+                dto.getSpecies()
+
+
         );
     }
 
@@ -112,9 +114,10 @@ public class CharakterMapper {
         charakter.setId(dto.getId());
         charakter.setName(dto.getName());
         charakter.setStatus(dto.getStatus());
-        charakter.setSpecies(dto.getSpecies());
         charakter.setGender(dto.getGender());
         charakter.setOrigin(dto.getOrigin());
+        charakter.setSpecies(dto.getSpecies());
+
         return charakter;
     }
 }

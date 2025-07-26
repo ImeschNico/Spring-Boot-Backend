@@ -290,58 +290,65 @@ public class CharakterService {
         }
     }
 
-    /**
-     * Validiert das Geschlecht eines Charakters.
-     *
-     * @param gender das Geschlecht
-     * @throws IllegalArgumentException wenn das Geschlecht ungültig ist
-     */
-    private void validateGender(String gender) {
-        if (gender == null || gender.trim().isEmpty()) {
-            throw new IllegalArgumentException("Gender darf nicht leer sein");
+        /**
+         * Validiert das Geschlecht eines Charakters (nur Deutsch).
+         *
+         * @param gender das Geschlecht (z.B. "männlich", "weiblich")
+         * @throws IllegalArgumentException wenn das Geschlecht ungültig oder leer ist
+         */
+        private void validateGender(String gender) {
+            if (gender == null || gender.trim().isEmpty()) {
+                throw new IllegalArgumentException("Gender darf nicht leer sein");
+            }
+
+            List<String> valid = List.of("männlich", "weiblich", "geschlechtslos", "unbekannt");
+
+            if (!valid.contains(gender.toLowerCase())) {
+                throw new IllegalArgumentException(
+                        "Ungültiges Geschlecht: " + gender + ". Gültige Werte: " + valid);
+            }
         }
 
-        List<String> valid = List.of("male", "female", "genderless", "unknown");
-        if (!valid.contains(gender.toLowerCase())) {
-            throw new IllegalArgumentException(
-                    "Invalid gender: " + gender + ". Valid genders: " + valid);
+        /**
+         * Validiert die Spezies eines Charakters (nur Deutsch).
+         *
+         * @param species die Spezies (z.B. "mensch", "alien")
+         * @throws InvalidCharakterSpeciesException wenn die Spezies ungültig oder leer ist
+         */
+        private void validateSpecies(String species) {
+            if (species == null || species.trim().isEmpty()) {
+                throw new InvalidCharakterSpeciesException("Species darf nicht leer sein");
+            }
+
+            List<String> valid = List.of("mensch", "alien", "roboter", "tier", "mutant");
+
+            if (!valid.contains(species.toLowerCase())) {
+                throw new InvalidCharakterSpeciesException(
+                        "Ungültige Spezies: " + species + ". Gültige Werte: " + valid);
+            }
+        }
+
+        /**
+         * Validiert die Herkunft eines Charakters (nur Deutsch).
+         *
+         * @param origin die Herkunft (z.B. "erde (c-137)", "zitadelle der ricks")
+         * @throws IllegalArgumentException wenn die Herkunft ungültig oder leer ist
+         */
+        private void validateOrigin(String origin) {
+            if (origin == null || origin.trim().isEmpty()) {
+                throw new IllegalArgumentException("Origin darf nicht leer sein");
+            }
+
+            List<String> valid = List.of(
+                    "erde (c-137)",
+                    "erde (ersatz-dimension)",
+                    "zitadelle der ricks",
+                    "galaktisches föderationsgefängnis"
+            );
+
+            if (!valid.contains(origin.toLowerCase())) {
+                throw new IllegalArgumentException(
+                        "Ungültige Herkunft: " + origin + ". Gültige Werte: " + valid);
+            }
         }
     }
-
-    /**
-     * Validiert die Spezies eines Charakters.
-     *
-     * @param species die Spezies
-     * @throws InvalidCharakterSpeciesException wenn die Spezies ungültig ist
-     */
-    private void validateSpecies(String species) {
-        if (species == null || species.trim().isEmpty()) {
-            throw new InvalidCharakterSpeciesException("Species darf nicht leer sein");
-        }
-
-        List<String> valid = List.of("human", "alien", "robot", "animal", "mutant");
-        if (!valid.contains(species.toLowerCase())) {
-            throw new InvalidCharakterSpeciesException(
-                    "Invalid species: " + species + ". Valid species: " + valid);
-        }
-    }
-
-    /**
-     * Validiert die Herkunft eines Charakters.
-     *
-     * @param origin die Herkunft
-     * @throws IllegalArgumentException wenn die Herkunft ungültig ist
-     */
-    private void validateOrigin(String origin) {
-        if (origin == null || origin.trim().isEmpty()) {
-            throw new IllegalArgumentException("Origin darf nicht leer sein");
-        }
-
-        List<String> valid = List.of("earth (c-137)", "earth (replacement dimension)",
-                "citadel of ricks", "galactic federation prison");
-        if (!valid.contains(origin.toLowerCase())) {
-            throw new IllegalArgumentException(
-                    "Invalid origin: " + origin + ". Valid origins: " + valid);
-        }
-    }
-}

@@ -5,10 +5,8 @@ import jakarta.persistence.*;
 
 /**
  * Entity-Klasse für einen Charakter in der Datenbank.
- *
  * Repräsentiert einen Charakter mit Attributen wie Name, Spezies,
  * Geschlecht, Herkunft und Status.
- *
  * Die Entity wird in der Tabelle "charaktere" gespeichert.
  */
 @Entity
@@ -55,12 +53,13 @@ public class Charakter {
      * @param origin  Herkunft des Charakters
      * @param status  Status des Charakters (z.B. aktiv, inaktiv)
      */
-    public Charakter(String name, String species, String gender, String origin, String status) {
+    public Charakter(String name, String status, String gender, String origin, String species) {
         this.name = name;
-        this.species = species;
+        this.status = status;
         this.gender = gender;
         this.origin = origin;
-        this.status = status;
+        this.species = species;
+
     }
 
     /**
@@ -74,14 +73,16 @@ public class Charakter {
      * @param origin  Herkunft des Charakters
      * @param status  Status des Charakters
      */
-    public Charakter(Long id, String name, String species, String gender, String origin, String status) {
+    public Charakter(Long id, String name, String status, String gender, String origin, String species) {
         this.id = id;
         this.name = name;
-        this.species = species;
+        this.status = status;
         this.gender = gender;
         this.origin = origin;
-        this.status = status;
+        this.species = species;
+
     }
+
 
     /**
      * Liefert die ID des Charakters.

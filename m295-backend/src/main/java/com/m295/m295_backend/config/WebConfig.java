@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  *
  * <p>
  * Diese Klasse ermöglicht Cross-Origin-Anfragen vom Frontend, z. B. bei einer
- * lokalen Entwicklung mit <code>http://localhost:5173</code>.
+ * lokalen Entwicklung mit <code><a href="http://localhost:5173">...</a></code>.
  * </p>
  *
  * <p><strong>Details:</strong></p>
@@ -42,7 +42,7 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
+        registry.addMapping("/**")
                 .allowedOrigins("http://localhost:5173")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")

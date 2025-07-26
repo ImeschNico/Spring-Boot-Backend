@@ -45,7 +45,6 @@ public class ErrorResponseDTO {
 
     /**
      * Gibt den technischen Fehlercode zurück.
-     *
      * @return error der technische Fehlercode
      */
     public String getError() {
@@ -54,7 +53,6 @@ public class ErrorResponseDTO {
 
     /**
      * Setzt den technischen Fehlercode.
-     *
      * @param error der technische Fehlercode
      */
     public void setError(String error) {
@@ -63,7 +61,6 @@ public class ErrorResponseDTO {
 
     /**
      * Gibt die benutzerfreundliche Fehlermeldung zurück.
-     *
      * @return message die benutzerfreundliche Fehlermeldung
      */
     public String getMessage() {
@@ -72,7 +69,6 @@ public class ErrorResponseDTO {
 
     /**
      * Setzt die benutzerfreundliche Fehlermeldung.
-     *
      * @param message die benutzerfreundliche Fehlermeldung
      */
     public void setMessage(String message) {
@@ -81,7 +77,6 @@ public class ErrorResponseDTO {
 
     /**
      * Gibt den HTTP-Statuscode zurück.
-     *
      * @return status der HTTP-Statuscode
      */
     public int getStatus() {
@@ -90,7 +85,6 @@ public class ErrorResponseDTO {
 
     /**
      * Setzt den HTTP-Statuscode.
-     *
      * @param status der HTTP-Statuscode
      */
     public void setStatus(int status) {
@@ -99,7 +93,6 @@ public class ErrorResponseDTO {
 
     /**
      * Gibt den Zeitstempel zurück, wann der Fehler auftrat.
-     *
      * @return timestamp der Zeitstempel des Fehlers
      */
     public LocalDateTime getTimestamp() {
@@ -108,7 +101,6 @@ public class ErrorResponseDTO {
 
     /**
      * Setzt den Zeitstempel für den Fehler.
-     *
      * @param timestamp der Zeitstempel des Fehlers
      */
     public void setTimestamp(LocalDateTime timestamp) {
@@ -117,7 +109,6 @@ public class ErrorResponseDTO {
 
     /**
      * Gibt den API-Pfad zurück, an dem der Fehler auftrat.
-     *
      * @return path der API-Pfad des Fehlers
      */
     public String getPath() {
@@ -126,7 +117,6 @@ public class ErrorResponseDTO {
 
     /**
      * Setzt den API-Pfad, an dem der Fehler auftrat.
-     *
      * @param path der API-Pfad des Fehlers
      */
     public void setPath(String path) {

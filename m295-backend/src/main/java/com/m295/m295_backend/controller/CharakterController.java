@@ -11,9 +11,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * REST-Controller zur Verwaltung von {@link Charakter}-Objekten.
@@ -165,15 +167,6 @@ public class CharakterController {
             summary = "Charakter filtern",
             description = "Gibt eine Liste von Chars zurück, die dem Filter entsprechen"
     )
-    /**
-     * Filtert Charaktere anhand von optionalen Parametern.
-     *
-     * @param species Spezies des Charakters (optional)
-     * @param status Status des Charakters (optional)
-     * @param gender Geschlecht des Charakters (optional)
-     * @param origin Herkunft des Charakters (optional)
-     * @return Gefilterte Liste der Charaktere
-     */
     public List<CharakterDTO> getFilteredCharacters(
             @Parameter(description = "Spezies des Chars")
             @RequestParam(required = false) String species,
@@ -371,4 +364,29 @@ public class CharakterController {
         return service.updateCharakterFromForm(id, charakter);
     }
 
+    /**
+     * Gibt einen zufälligen Charakter aus der Datenbank zurück.
+     *
+     * @return Ein zufälliger {@link Charakter} als ResponseEntity oder 404, falls keine vorhanden sind.
+     */
+    @GetMapping("/random")
+    @Operation(
+            summary = "Zufälliger Charakter",
+            description = "Gibt einen zufällig ausgewählten Charakter aus der Datenbank zurück"
+    )
+    @ApiResponse(responseCode = "200", description = "Zufälliger Charakter erfolgreich gefunden")
+    @ApiResponse(responseCode = "404", description = "Keine Charaktere vorhanden")
+    public ResponseEntity<?> getRandomCharacter() {
+        List<CharakterDTO> allCharacters = service.getAllCharaktersAsDTO();
+
+        if (allCharacters.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Keine Charaktere vorhanden.");
+        }
+
+        int randomIndex = new Random().nextInt(allCharacters.size());
+        CharakterDTO randomCharacter = allCharacters.get(randomIndex);
+
+        return ResponseEntity.ok(randomCharacter);
+    }
 }

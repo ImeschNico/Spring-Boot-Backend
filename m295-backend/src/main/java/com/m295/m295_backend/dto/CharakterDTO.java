@@ -54,18 +54,19 @@ public class CharakterDTO {
      *
      * @param id      Die ID des Charakters
      * @param name    Der Name des Charakters
-     * @param status  Der Status (z. B. "Alive", "Dead")
-     * @param species Die Spezies (z. B. "Human")
-     * @param gender  Das Geschlecht (z. B. "Male")
+     * @param status  Der Status (z.b. "Alive", "Dead")
+     * @param gender  Das Geschlecht (z.b "Male")
      * @param origin  Der Herkunftsort
+     * @param species Die Spezies (z.b "Human")
      */
-    public CharakterDTO(Long id, String name, String status, String species, String gender, String origin) {
+    public CharakterDTO(Long id, String name, String status, String gender, String origin, String species) {
         this.id = id;
         this.name = name;
         this.status = status;
-        this.species = species;
         this.gender = gender;
         this.origin = origin;
+        this.species = species;
+
 
     }
 

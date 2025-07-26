@@ -64,13 +64,15 @@ public class CharakterFormDTO {
      * @param origin  Herkunft des Charakters (max. 100 Zeichen, nicht leer)
      * @param status  Status des Charakters (max. 50 Zeichen, nicht leer)
      */
-    public CharakterFormDTO(Long id, String name, String gender, String species, String origin, String status) {
+    public CharakterFormDTO(Long id, String name, String status, String gender, String origin, String species) {
         this.id = id;
         this.name = name;
-        this.gender = gender;
-        this.species = species;
-        this.origin = origin;
         this.status = status;
+        this.gender = gender;
+        this.origin = origin;
+        this.species = species;
+
+
     }
 
     /**
@@ -83,10 +85,11 @@ public class CharakterFormDTO {
         return new CharakterFormDTO(
                 charakter.getId(),
                 charakter.getName(),
-                charakter.getSpecies(),
+                charakter.getStatus(),
                 charakter.getGender(),
                 charakter.getOrigin(),
-                charakter.getStatus()
+                charakter.getSpecies()
+
         );
     }
 
