@@ -62,17 +62,17 @@ Das Backend erfüllt folgende Hauptfunktionen:
 ---
 
 ## Arichitektur & Klassendiagramm
-[Architektur & Klassendiagramm](docs/Architektur+Klassen.md)
+![Architektur & Klassendiagramm](docs/Architektur+Klassen.md)
 
 ---
 
 ## REST_Schnittstellen
-[REST-Schnittstellen](docs/REST-Schnittstellen.md)
+![REST-Schnittstellen](docs/REST-Schnittstellen.md)
 
 ---
 
 ## Tests
-[Tests](docs/Tests.md)
+![Tests](docs/Tests.md)
 
 ---
 
