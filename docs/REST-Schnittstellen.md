@@ -111,3 +111,12 @@ Das Backend stellt eine RESTful API bereit, die es ermöglicht, Charaktere und F
 - **Response**: HTTP 200
 
   ![REST9](/docs/screenshots/REST9.png)
+
+---
+
+### Swagger
+
+Swagger ist ein Tool zur Dokumentation und zum Testen von REST-APIs. Es erstellt automatisch eine interaktive Benutzeroberfläche, in der alle Endpunkte beschrieben und direkt getestet werden können.
+
+Swagger ist unter folgendem Link im Browser verfügbar:
+http://localhost:8080/swagger-ui/index.html#/
