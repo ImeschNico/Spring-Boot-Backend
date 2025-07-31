@@ -34,7 +34,7 @@ Im `pom.xml` bitte auf folgende Versionen achten:
 
 ---
 
-## 4. PostgreSQL mit Docker Compose starten
+## 4. PostgreSQL mit Docker Compose starten ##
 
 [Dockeranleitung](/m295-backend/src/main/java/com/m295/m295_backend/docker/Docker-Compose.md)
 ---
